@@ -1,16 +1,26 @@
 body {
   margin: 0;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 20px;
-  background-color: #D7D9CE;
+  font-size: 20vw;
+  background-color: #003459;
 }
+
+#parent_container {
+  margin: 0;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
+}
+
 
 /* Navigation bar customization */
 
-header {
+.header_container {
   margin: 0;
+  top: 0;
   width: 100%;
-  height: 10%;
+  min-width: 100%;
   position: absolute;
   background-color: white;
   color: #003459;
@@ -19,8 +29,6 @@ header {
   border-bottom-style: solid;
   border-bottom-color: #276FBF;
   border-bottom-width: 10px;
-  z-index: 10;
-  overflow: visible;
 }
 
 nav {
@@ -29,7 +37,6 @@ nav {
 
 nav ul {
   margin: auto;
-  padding-top: 40px;
   list-style: none;
 }
 
@@ -39,21 +46,23 @@ nav li {
 }
 
 nav li p {
-  margin-right: 25px;
+  margin-top: 0;
+  padding: 1% 0 1% 0;
   display: inline-block;
   text-transform: uppercase;
+  text-align: left;
   border-style: solid;
   border-width: 5px;
   border-radius: 10px;
   border-color: #003459;
   font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
+  font-size: 1vw;
 }
 
 nav li a {
   text-decoration: none;
   text-transform: uppercase;
-  margin: 25px;
+  margin-left: 60px;
   color: #003459;
 }
 
@@ -73,11 +82,12 @@ nav li a:hover::after {
 
 /* Introduction with Bio */
 
-#intro {
-margin-top: 5%;
-width: 100%;
-height: 50%;
-position: absolute;
+.intro {
+width: auto;
+margin-top: 7%;
+max-width: 100%;
+height: 45%;
+position: static;
 background-color: #003459;
 text-align: center;
 color: white;
@@ -88,56 +98,65 @@ border-bottom-style: solid;
 border-bottom-color: #003459;
 border-bottom-width: 10px;
 display: flex;
-overflow: visible;
-z-index: 9;
 }
 
-  #left {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  .left {
+    width: 100%;
+    max-height: 100%;
     margin-left: 2%;
-    width: 50%;
+    margin-bottom: 2%;
 }
 
 img {
-border-radius: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 5%;
+  border-color: #276FBF;
+  width: auto;
+  max-width 100%;
+  height: auto;
 }
 
-#right {
-  margin-left: 5%;
-  margin-top: 7%;
+.right {
+  margin-right: 2%;
+  height: auto;
+  max-height: 100%;
+  margin-bottom: 3%;
+  margin-top: 3%;
   flex-grow: .5;
-  display: block;
 }
 
 /* More Info */
 
-#more_info {
-  margin-top: 31%;
+.more_info {
   width: 100%;
-  height: 40%;
-  position: absolute;
+  height: auto;
+  max-height:45%;
+  position: static;
   text-align: center;
   color: white;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
-  font-size: 25px;
-  border-bottom-style: solid;
-  border-bottom-width: 6px;
-  border-bottom-color: #003459;
+  font-size: 2vw;
   display: flex;
-  z-index: 11;
+  border-style: solid;
+  border-width: auto;
+  border-color: black;
 }
 
-#bottom_left {
+.bottom_left {
+  max-height: 100%;
+  height: auto;
   width: 33%;
   background-color: black;
   border-radius: 0px;
+  border: none;
 }
 
-#bottom_center {
-  margin-top: 5%;
+.bottom_center {
   width: 35%;
+  max-height: 100%;
+  height: auto;
   flex-grow: 33%;
   background-color: #D7D9CE;
   text-align: center;
@@ -145,13 +164,15 @@ border-radius: 20px;
 }
 
 h2 .contactme {
-  margin-top: 50%;
   position: absolute;
 }
 
-#bottom_right {
+.bottom_right {
   width: 33%;
+  max-height: 100%;
+  height: auto;
   flex-grow: 33%;
   background-color: black;
   border-radius: 0px;
+  border: none;
 }
