@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
@@ -13,68 +11,148 @@
 
 <body>
 
-<div id="parent_container">
+<!--Control-->
+  <p class="radio-group">
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Main" checked /> Main
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="About-Me" /> About Me
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Video-Audio" /> Video/Audio
+    </label>
+    <!-- <label>
+      <input type="radio" name="rotate-cube-side" value="back" /> back
+    </label>
+    <label> -->
+      <input type="radio" name="rotate-cube-side" value="Images" /> Images
+    </label>
+    <!-- <label>
+      <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+    </label> -->
+  </p>
 
-<div class="header_container">
+  <div></div>
 
-      <header>
-          <nav>
-            <ul>
-                <li><p>/* Name Not Found! */</p></li>
-                <li><a href="https://github.com/rc9207/Projects"><img src="GitHub-Mark-32px.png" alt="github"></a></li>
-                <li><a href="https://www.codecademy.com/rc9207">codecademy profile</a></li>
+  <div class="scene">
+  <div class="cube">
 
-            </ul>
-          </nav>
-      </header>
+    <div class="cube__face cube__face--top">
+        <div class="Splash">
+          <h2>Welcome to!</h2>
+          <h1>/* NAME NOT FOUND */</h1>
+          <h2>Click one of the buttons in the navigation bar to begin!</h2>
+        </div>
+    </div> <!-- Closing Div Cube Top -->
 
-</div> <!--Header Container Closing Child -->
+    <div class="cube__face cube__face--front">
 
-<div class="intro">
+      <div class="parent_container">
 
-    <div class="left"><img src="seth_graham.jpg" alt="Seth Graham"></div>
+      <div class="header_container">
 
-    <div class="right">
+            <header>
+                <nav>
+                  <ul>
+                      <li><p>/* Name Not Found! */</p></li>
+                      <li><a href="https://github.com/rc9207/Projects">my github repository</a></li>
+                      <li><a href="https://www.codecademy.com/rc9207">codecademy profile</a></li>
 
-      <h2 class="name">Hi! My name is Seth Graham!</h2>
+                  </ul>
+                </nav>
+            </header>
 
-      <p>I'm a freelance Software Engineer with a plethora of experience in creating customer
-        specified automation and manufacturing solutions based out of Cape Coral, FL. I have
-        serious passion for UI effects and creating intuitive, informative, and dynamic
-        user experiences. </p></div>
+      </div> <!--Header Container Closing Child -->
 
-</div> <!-- Intro Container Child-->
+      <div class="intro">
 
-  <div class="more_info">
+          <div class="left"><img src="seth_graham.jpg" alt="Seth Graham"></div>
 
-  <div class="bottom_left">
+          <div class="right">
 
-      <img class="bottom_left" src="coding_gif.gif" alt="Atom" style="width:100%;height:100%;">
+            <h2 class="name">Hi! My name is Seth Graham!</h2>
 
+            <p>I'm a freelance Software Engineer with a plethora of experience in creating customer
+              specified automation and manufacturing solutions based out of Cape Coral, FL. I have
+              serious passion for UI effects and creating intuitive, informative, and dynamic
+              user experiences. </p></div>
+
+      </div> <!-- Intro Container Child-->
+
+        <div class="more_info">
+
+        <div class="bottom_left">
+
+            <img class="bottom_left" src="coding_gif.gif" alt="Atom" style="width:100%;height:100%;">
+
+        </div>
+
+        <div class="bottom_center">
+              <ul>
+                <li>USAF Veteran</li>
+                <li>5 Years of Automation Experience</li>
+                <li>Versed in HTML, CSS, JavaScript, and SQL.</li>
+              </ul>
+
+              <h2 class="contactme">Let's Bring Your Ideas To Life!</h2>
+        </div>
+
+        <div class="bottom_right">
+            <img class="bottom_right" src="mazak.gif" alt="Mazak" style="width:100%;height:100%;">
+        </div>
+
+      </div> <!--More Info Container -->
+
+    </div> <!--Parent container Div -->
+
+    </div> <!-- Cube__Face-front Div -->
+
+    <div class="cube__face cube__face--back">back</div>
+
+    <div class="cube__face cube__face--right">
+
+      <div>
+
+        <h2 class="song">Mazak Palletech In-Action</p>
+        <video width="50%" height="50%" controls>
+        <source src="Palletech.mp4" type="video/mp4">
+
+      </div> <!-- End Of Video Div -->
+
+      <div>
+          <h2 class="song">The District Sleeps Alone Tonight Artist: The Postal Service</p>
+          <audio controls>
+          <source src="the-district-sleeps-alone.mp3" type="audio/mpeg">
+      </div> <!-- End Of Audio Div -->
+
+
+    </div> <!-- Cube Face Right Closing Div -->
+
+    <div class="cube__face cube__face--left">
+      <div class="pictures">
+        <div>
+          <h2>Pardon the mess! This site is still under maintenance!</h2>
+
+          <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div class="svg">
+          <embed src="rough-cutting-pattern.pdf" width="50%" height="100%"  alt="PDF File">
+          <img src="Home-Icon.svg" alt="SVG Image">
+        </div>
   </div>
 
-  <div class="bottom_center">
-        <ul>
-          <li>USAF Veteran</li>
-          <li>5 Years of Automation Experience</li>
-          <li>Versed in HTML, CSS, JavaScript, and SQL.</li>
-        </ul>
 
-        <h2 class="contactme">Let's Bring Your Ideas To Life!</h2>
-
+    <div class="cube__face cube__face--bottom">bottom</div>
   </div>
-
-  <div class="bottom_right">
-      <img class="bottom_right" src="mazak.gif" alt="Mazak" style="width:100%;height:100%;">
-  </div>
-
-</div> <!--More Info Container -->
+</div>
 
 
-
-</div> <!--Parent container Div -->
+<script src="script.js"></script>
 
 </body>
+
 
 
 </html>
