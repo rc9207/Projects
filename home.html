@@ -22,11 +22,11 @@
       <input type="radio" name="rotate-cube-side" value="About-Me" /> About Me
     </label>
     <label>
-      <input type="radio" name="rotate-cube-side" value="Video-Audio" /> Video/Audio
+      <input type="radio" name="rotate-cube-side" value="Video" /> Video
     </label>
-    <!-- <label>
-      <input type="radio" name="rotate-cube-side" value="back" /> back
-    </label> -->
+    <label>
+      <input type="radio" name="rotate-cube-side" value="About-The-Site" /> About The Site
+    </label>
     <label>
       <input type="radio" name="rotate-cube-side" value="Images" /> Images
     </label>
@@ -35,7 +35,7 @@
     </label> -->
   </p>
 
-  <div></div>
+  <div></div> <!-- Spacing Div for cube-->
 
   <div class="scene">
   <div class="cube">
@@ -110,24 +110,43 @@
 
     </div> <!-- Cube__Face-front Div -->
 
-    <div class="cube__face cube__face--back">back</div>
+    <div class="cube__face cube__face--back"> <!-- About The Site -->
+
+      <div class="about-the-site-title">
+
+        <h1>About The Site</h1>
+
+      </div>
+
+
+        <div class="about-the-site">
+
+          <p>I originally started with a traditional two dimensional website. While
+            working with transformations in css, I suddenly realized that I could
+            accomplish much more than I had originally intended. The end result of
+            my efforts is the three dimensional cube on which my website is displayed
+            on. This "Cube" is an combination of 6 seperate pages. All of which are
+            rotated to the proper viewing angle. This gives the illusion that the
+            website is actually three dimensional. finally I had set the the CSS rotation
+           transformations into a singular Javascript variable. Each transformation
+           is governed by a single "Radio" button. In the future I plan on relocating
+           the buttons to either side of the page with a clickable "arrow" image.</p>
+
+         </div>
+
+
+
+    </div> <!-- About The Site Closing Div -->
 
     <div class="cube__face cube__face--right">
 
       <div>
 
-        <h2 class="song">Mazak Palletech In-Action</h2>
+        <h2 class="video">Mazak Palletech In-Action</h2>
         <video src="Palletech.mp4" width="50%" height="50%" controls></video>
 
 
       </div> <!-- End Of Video Div -->
-
-      <div>
-          <h2 class="song">The District Sleeps Alone Tonight Artist: The Postal Service</h2>
-          <audio controls>
-          <source src="the-district-sleeps-alone.mp3" type="audio/mpeg">
-          </audio>
-      </div> <!-- End Of Audio Div -->
 
 
     </div> <!-- Cube Face Right Closing Div -->
@@ -135,7 +154,7 @@
     <div class="cube__face cube__face--left">
       <div class="pictures">
         <div>
-          <h2>Pardon the mess! This site is still under maintenance!</h2>
+          <h2>Pardon the mess! This page is still under maintenance!</h2>
 
           <canvas id="myCanvas"></canvas>
         </div>
