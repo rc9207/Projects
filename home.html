@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>/* Name Not Found! */</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--Control-->
+  <p class="radio-group">
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Main" checked /> Main
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="About-Me" /> About Me
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Video" /> Video
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="About-The-Site" /> About The Site
+    </label>
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Images" /> Images
+    </label>
+    <!-- <label>
+      <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+    </label> -->
+  </p>
+
+  <div></div> <!-- Spacing Div for cube-->
+
+  <div class="scene">
+  <div class="cube">
+
+    <div class="cube__face cube__face--top">
+        <div class="Splash">
+          <h2>Welcome to!</h2>
+          <h1>/* NAME NOT FOUND */</h1>
+          <h2>Click one of the buttons in the navigation bar to begin!</h2>
+        </div>
+    </div> <!-- Closing Div Cube Top -->
+
+    <div class="cube__face cube__face--front">
+
+      <div class="parent_container">
+
+      <div class="header_container">
+
+            <header>
+                <nav>
+                  <ul>
+                      <li><p>/* Name Not Found! */</p></li>
+                      <li><a href="https://github.com/rc9207/Projects">my github repository</a></li>
+                      <li><a href="https://www.codecademy.com/rc9207">codecademy profile</a></li>
+
+                  </ul>
+                </nav>
+            </header>
+
+      </div> <!--Header Container Closing Child -->
+
+      <div class="intro">
+
+          <div class="left"><img src="seth_graham.jpg" alt="Seth Graham"></div>
+
+          <div class="right">
+
+            <h2 class="name">Hi! My name is Seth Graham!</h2>
+
+            <p>I'm a freelance Software Engineer with a plethora of experience in creating customer
+              specified automation and manufacturing solutions based out of Cape Coral, FL. I have
+              serious passion for UI effects and creating intuitive, informative, and dynamic
+              user experiences. </p></div>
+
+      </div> <!-- Intro Container Child-->
+
+        <div class="more_info">
+
+        <div class="bottom_left">
+
+            <img class="bottom_left" src="coding_gif.gif" alt="Atom" style="width:100%;height:100%;">
+
+        </div>
+
+        <div class="bottom_center">
+              <ul>
+                <li>USAF Veteran</li>
+                <li>5 Years of Automation Experience</li>
+                <li>Versed in HTML, CSS, JavaScript, and SQL.</li>
+              </ul>
+
+              <h2 class="contactme">Let's Bring Your Ideas To Life!</h2>
+        </div>
+
+        <div class="bottom_right">
+            <img class="bottom_right" src="mazak.gif" alt="Mazak" style="width:100%;height:100%;">
+        </div>
+
+      </div> <!--More Info Container -->
+
+    </div> <!--Parent container Div -->
+
+    </div> <!-- Cube__Face-front Div -->
+
+    <div class="cube__face cube__face--back"> <!-- About The Site -->
+
+      <div class="about-the-site-title">
+
+        <h1>About The Site</h1>
+
+      </div>
+
+
+        <div class="about-the-site">
+
+          <p>I originally started with a traditional two dimensional website. While
+            working with transformations in css, I suddenly realized that I could
+            accomplish much more than I had originally intended. The end result of
+            my efforts is the three dimensional cube on which my website is displayed
+            on. This "Cube" is an combination of 6 seperate pages. All of which are
+            rotated to the proper viewing angle. This gives the illusion that the
+            website is actually three dimensional. finally I had set the the CSS rotation
+           transformations into a singular Javascript variable. Each transformation
+           is governed by a single "Radio" button. In the future I plan on relocating
+           the buttons to either side of the page with a clickable "arrow" image.</p>
+
+         </div>
+
+
+
+    </div> <!-- About The Site Closing Div -->
+
+    <div class="cube__face cube__face--right">
+
+      <div>
+
+        <h2 class="video">Mazak Palletech In-Action</h2>
+        <video src="Palletech.mp4" width="50%" height="50%" controls></video>
+
+
+      </div> <!-- End Of Video Div -->
+
+
+    </div> <!-- Cube Face Right Closing Div -->
+
+    <div class="cube__face cube__face--left">
+      <div class="pictures">
+        <div>
+          <h2>Pardon the mess! This page is still under maintenance!</h2>
+
+          <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div class="svg">
+          <embed src="rough-cutting-pattern.pdf" width="50%" height="100%"  alt="PDF File">
+          <img src="Home-Icon.svg" alt="SVG Image">
+        </div>
+  </div>
+
+
+      <div class="cube__face cube__face--bottom">bottom</div>
+    </div>
+  </div>
+</div> <!-- Closing Div for Scene -->
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+
+
+</html>
