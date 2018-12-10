@@ -8,6 +8,7 @@
   <link href="style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -22,17 +23,17 @@
       <input type="radio" name="rotate-cube-side" value="About-Me" /> About Me
     </label>
     <label>
-      <input type="radio" name="rotate-cube-side" value="Video" /> Video
+      <input type="radio" name="rotate-cube-side" value="Gallery" /> Gallery
     </label>
     <label>
       <input type="radio" name="rotate-cube-side" value="About-The-Site" /> About The Site
     </label>
     <label>
-      <input type="radio" name="rotate-cube-side" value="Images" /> Images
+      <input type="radio" name="rotate-cube-side" value="My-Qualifications" /> My Qualifications
     </label>
-    <!-- <label>
-      <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
-    </label> -->
+    <label>
+      <input type="radio" name="rotate-cube-side" value="Projects" /> Projects
+    </label>
   </p>
 
   <div></div> <!-- Spacing Div for cube-->
@@ -46,7 +47,7 @@
           <h1>/* NAME NOT FOUND */</h1>
           <h2>Click one of the buttons in the navigation bar to begin!</h2>
         </div>
-    </div> <!-- Closing Div Cube Top -->
+    </div> <!-- Closing Div Cube Splash -->
 
     <div class="cube__face cube__face--front">
 
@@ -112,7 +113,7 @@
 
     <div class="cube__face cube__face--back"> <!-- About The Site -->
 
-      <div class="about-the-site-title">
+      <div class="title">
 
         <h1>About The Site</h1>
 
@@ -122,13 +123,13 @@
         <div class="about-the-site">
 
           <p>I originally started with a traditional two dimensional website. While
-            working with transformations in css, I suddenly realized that I could
+            working with transformations in CSS, I suddenly realized that I could
             accomplish much more than I had originally intended. The end result of
             my efforts is the three dimensional cube on which my website is displayed
             on. This "Cube" is an combination of 6 seperate pages. All of which are
             rotated to the proper viewing angle. This gives the illusion that the
             website is actually three dimensional. finally I had set the the CSS rotation
-           transformations into a singular Javascript variable. Each transformation
+           transformations into a singular JavaScript variable. Each transformation
            is governed by a single "Radio" button. In the future I plan on relocating
            the buttons to either side of the page with a clickable "arrow" image.</p>
 
@@ -139,34 +140,71 @@
     </div> <!-- About The Site Closing Div -->
 
     <div class="cube__face cube__face--right">
-
       <div>
 
-        <h2 class="video">Mazak Palletech In-Action</h2>
-        <video src="Palletech.mp4" width="50%" height="50%" controls></video>
+        <div class="title">
+          <h1>Gallery</h1>
+            </div>
+
+      <div class="video">
+          <h2>Mazak Palletech In-Action</h2>
+            <video src="Palletech.mp4" width="50%" height="50%" controls></video>
+      </div>
+
+      <div class="audio">
+        <h2>The District Sleeps Alone Tonight</h2>
+        <audio controls>
+          <source src="the-district-sleeps-alone.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+            </audio>
+      </div>
+
+      <div class="image">
+            <canvas id="myCanvas"></canvas>
+              <img src="Home-Icon.svg" alt="SVG Image" width="50%" height="50%">
+      </div>
 
 
-      </div> <!-- End Of Video Div -->
+      </div> <!-- End Of Audio/Video Div -->
 
 
     </div> <!-- Cube Face Right Closing Div -->
 
     <div class="cube__face cube__face--left">
-      <div class="pictures">
-        <div>
-          <h2>Pardon the mess! This page is still under maintenance!</h2>
+        <embed src="Linkedin-profile.pdf" width="100%" height="100%"  alt="Seth Graham's Linkedin Page">
 
-          <canvas id="myCanvas"></canvas>
-        </div>
+    </div>
+      <div class="cube__face cube__face--bottom">
 
-        <div class="svg">
-          <embed src="rough-cutting-pattern.pdf" width="50%" height="100%"  alt="PDF File">
-          <img src="Home-Icon.svg" alt="SVG Image">
-        </div>
+        <div class="title"><h1>Projects</h1></div>
+
+          <div class="scratch-project">
+            <h2>Scratch Project</h2>
+            <a href="https://scratch.mit.edu/projects/243589574/">Scratch Project</a>
+          </div>
+            <div id="container">
+              <div class="speech">Enter your text into the input of the Ceasar Cipher</div>
+                <div class="input">
+                  <form id="form">
+      Input:
+      <input type="text" id="cypher"/>
+      Offset:
+      <input type="number" value="3" id="offset"/>
+      <br/>
+      <br/>
+      <br/>
+      Result:
+      <input type="text" id="Result"/>
+
+      <br/>
+      <br/>
+      <br/>
+
+    </form>
   </div>
+</div>
 
-
-      <div class="cube__face cube__face--bottom">bottom</div>
+      </div>
     </div>
   </div>
 </div> <!-- Closing Div for Scene -->
